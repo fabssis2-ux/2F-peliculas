@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2F PELÍCULAS | Películas Solares e Térmicas</title>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <style>
+        :root { --primary: #0056b3; --dark: #121212; --accent: #00d2ff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background: #fff; color: #333; line-height: 1.6; }
+        
+        header { background: var(--dark); color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--primary); }
+        .logo h1 { font-size: 2.5rem; }
+        .logo span { color: var(--accent); }
+        
+        nav { margin-top: 20px; }
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+        nav a { color: #ccc; text-decoration: none; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
+        nav a:hover { color: var(--accent); }
+
+        section { padding: 80px 20px; max-width: 1000px; margin: 0 auto; text-align: center; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; }
+        section:nth-child(even) { background: #f9f9f9; max-width: 100%; }
+        
+        h2 { font-size: 2rem; margin-bottom: 20px; color: var(--dark); }
+        h2::after { content: ''; display: block; width: 50px; height: 3px; background: var(--accent); margin: 10px auto; }
+        
+        .whatsapp-btn { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 20px; transition: 0.3s; }
+        .whatsapp-btn:hover { background: #128c7e; transform: translateY(-3px); }
+
+        footer { background: var(--dark); color: #666; padding: 40px; text-align: center; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>2F <span>PELÍCULAS</span></h1></div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#empresa">Empresa</a></li>
+                <li><a href="#solar">Solares</a></li>
+                <li><a href="#termica">Térmicas</a></li>
+                <li><a href="#seguranca">Segurança</a></li>
+                <li><a href="#vantagens">Vantagens</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Proteção Solar de Elite</h2>
+        <p>Soluções avançadas em películas térmicas e de segurança para o seu conforto.</p>
+        <a href="https://wa.me/351926258225" class="whatsapp-btn">Pedir Orçamento via WhatsApp</a>
+    </section>
+
+    <section id="empresa">
+        <h2>A Empresa</h2>
+        <p>A 2F Películas é referência em aplicação técnica em Portugal, garantindo durabilidade e estética impecável.</p>
+    </section>
+
+    <section id="solar">
+        <h2>Películas Solares</h2>
+        <p>Controle a luminosidade e proteja o interior do seu imóvel contra raios UV.</p>
+    </section>
+
+    <section id="termica">
+        <h2>Películas Térmicas</h2>
+        <p>Tecnologia de Nano Cerâmica: bloqueie o calor sem perder a transparência dos vidros.</p>
+    </section>
+
+    <section id="seguranca">
+        <h2>Segurança e Privacidade</h2>
+        <p>Películas de reforço contra quebras e opções foscas para total discrição.</p>
+    </section>
+
+    <section id="vantagens">
+        <h2>Vantagens</h2>
+        <p>Economia de energia, conforto térmico e proteção da sua saúde e dos seus móveis.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <p>Excelência em cada detalhe. Veja nossos projetos residenciais e comerciais.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Telemóvel: <strong>+351 926 258 225</strong></p>
+        <a href="https://wa.me/351926258225" class="whatsapp-btn">Enviar Mensagem</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 2F Películas - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('#menu a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
